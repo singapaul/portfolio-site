@@ -1,0 +1,60 @@
+// defining the color schemes
+
+$yellow: #FCD91F;
+$red: #F25230; 
+$white:#ffffff;
+$black: #000000;
+$blue: #0078B5;
+$grey: #C4C4C4;
+$green: #4C926D;
+
+
+
+// Univerisal selectors
+
+body {
+  width: 360px;
+}
+
+// styling the home page
+
+.landing {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  // Styling the titles for the landing page
+  &__titles {
+    font-weight: bold;
+    font-size: 200%;
+  }
+
+  // Styling the graphics for the landing page
+
+  &__graphic {
+
+    // individual styling
+    &__split-square {
+      width: 100%;
+      // padding top 100% maintains 1:1 aspect ratio
+      padding-top: 100%;
+      background: linear-gradient(-45deg, yellow, yellow 50%, red 50%, red 50%)
+    }
+
+    // individual styling
+    &__split-circle {}
+
+    // individual styling
+    &__bottom-triangle {}
+
+    // individual styling
+    &__stripes {}
+
+    // end of graphic styling
+  }
+
+  // end of landing page styling
+}
+
+// end 

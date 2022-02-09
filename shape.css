@@ -1,0 +1,83 @@
+
+.parent{
+  position: relative;
+  width: 30%;
+  height: fit-content;
+}
+
+
+/* twosquare */
+
+.twosquare{
+  position: relative;
+  bottom: 30px;
+}
+
+
+.topsquare{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(-45deg, yellow
+  , yellow 50%,red
+  50%, red 50%);
+
+
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(-45deg, black, black 50%,white
+   50%, white 50%);
+  border-radius: 50%;
+position: relative;
+bottom: 65px;
+left: 35px;
+
+}
+
+ /* bottom graphics */
+#triangle-bottomleft {
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid blue;
+  border-right: 100px solid transparent;
+  position: absolute;
+  bottom: 0px;
+
+}
+
+.test {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.test:before {
+  content: '';
+  position: absolute;
+  border-bottom: 100px;
+  border-left: 100px;
+  background: -webkit-linear-gradient(90deg, black 50%, #ffffff 50%);
+  background: -moz-linear-gradient(0deg, black 50%, #ffffff 50%);
+  background: linear-gradient(0deg, black 50%, #ffffff 50%);
+  background-size: 100% 20px;
+  top: 0px;
+  left: 0px;
+  height: 150%;
+  width: 150%;
+  -webkit-transform-origin: 15% 60%;
+  -moz-transform-origin: 15% 60%;
+  transform-origin: 15% 60%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+.landing-graphic{
+  display: flex;
+  flex-direction: column;
+}

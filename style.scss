@@ -1,7 +1,7 @@
 // defining the color schemes
 
 $yellow: #FCD91F;
-$red: #F25230; 
+$red: #F25230;
 $white:#ffffff;
 $black: #000000;
 $blue: #0078B5;
@@ -12,9 +12,7 @@ $green: #4C926D;
 
 // Univerisal selectors
 
-body {
-  width: 360px;
-}
+
 
 // styling the home page
 
@@ -33,28 +31,97 @@ body {
   // Styling the graphics for the landing page
 
   &__graphic {
+    position: relative;
+    width:200px;
+// will take up 100% of parent
+    img{width: 100%;}
 
     // individual styling
     &__split-square {
       width: 100%;
       // padding top 100% maintains 1:1 aspect ratio
       padding-top: 100%;
-      background: linear-gradient(-45deg, $yellow, $yellow 50%, $red 50%, $red 50%)
+      background: linear-gradient(-45deg, $yellow, $yellow 50%, $red 50%, $red 50%);
+      position: relative;
+
+      .landing__graphic__split-circle {
+        position: absolute;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(-45deg, $black, $black 50%, $white 50%, $white 50%);
+        border-radius: 50%;
+
+      }
     }
 
     // individual styling
-    &__split-circle {}
+    // &__split-circle {
+    //   width: 50%;
+    //   padding-top: 50%;
+    //   background: linear-gradient(-45deg, $black, $black 50%, $white 50%, $white 50%);
+    //   border-radius: 50%;
+    //   position: absolute;
+    //   top: 25%;
+    //   left: 25%;
+    // }
+
+
 
     // individual styling
-    &__bottom-triangle {}
+    &__stripes {
+      height: 1000px;
+      width: 100%;
+      border: solid black 2px;
+      position: relative;
+      overflow: hidden;
 
-    // individual styling
-    &__stripes {}
+      .landing__graphic__bottom-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20rem 0 0 20rem;
+        border-color: transparent transparent transparent #007bff;
+        position: absolute;
 
-    // end of graphic styling
+      }
+
+
+    }
+
+
+    &__stripes:before {
+      content: '';
+      position: absolute;
+      border-bottom: 100px;
+      border-left: 100%;
+      background: -webkit-linear-gradient(90deg, black 50%, #ffffff 50%);
+      background: -moz-linear-gradient(0deg, black 50%, #ffffff 50%);
+      background: linear-gradient(0deg, black 50%, #ffffff 50%);
+      background-size: 100% 20px;
+      top: 0px;
+      left: 0px;
+      height: 150%;
+      width: 150%;
+      -webkit-transform-origin: 15% 60%;
+      -moz-transform-origin: 15% 60%;
+      transform-origin: 15% 60%;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+
+
+
   }
 
-  // end of landing page styling
+  // end of graphic styling
 }
+
+// end of landing page styling
+
 
 // end 

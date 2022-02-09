@@ -39,7 +39,7 @@ body {
       width: 100%;
       // padding top 100% maintains 1:1 aspect ratio
       padding-top: 100%;
-      background: linear-gradient(-45deg, yellow, yellow 50%, red 50%, red 50%)
+      background: linear-gradient(-45deg, $yellow, $yellow 50%, $red 50%, $red 50%)
     }
 
     // individual styling

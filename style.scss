@@ -61,7 +61,7 @@ sans-serif;
   &__titles {
     font-weight: bold;
     font-size: 5em;
-    min-height: 185vh;
+    min-height: 155vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -152,6 +152,10 @@ sans-serif;
   &__content {
     width: 100%;
     background-color: $green;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 
     &__graphic {

@@ -19,6 +19,12 @@ sans-serif;
 
 // Univerisal selectors
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 // Navbar
 
 .navbar {
@@ -60,8 +66,8 @@ sans-serif;
   // Styling the titles for the landing page
   &__titles {
     font-weight: bold;
-    font-size: 5em;
-    min-height: 155vh;
+    font-size: 2rem;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -90,6 +96,12 @@ sans-serif;
     font-size: 2em;
     min-height: 1vh;
     font-family: $headingFont;
+    padding: 3rem 0 3rem 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
   }
 
   &__content {
@@ -199,15 +211,15 @@ sans-serif;
     font-family: $headingFont;
     display: flex;
     justify-content: center;
+    padding: 3rem 0 3rem 0;
 
   }
 
   &__figure {
-    width: 100%;
-    margin: 0 0% 0 15%;
+
+
 
     &__svg {
-      width: 60%;
       padding-top: 5vh;
 
 
@@ -218,7 +230,7 @@ sans-serif;
     min-height: 35vh;
     background-color: $blue;
     width: 90%;
-    margin: auto;
+    margin: 15vh auto 15vh auto;
     box-shadow: 3em 3em;
     padding: 5%;
 
@@ -268,14 +280,33 @@ sans-serif;
 
     }
 
-    &-submit:hover{
+    &-submit:hover {
       background-color: green;
     }
+  }
+}
+
+// end of contact form
+
+// Footer section 
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+
+  &__tag {font-family: $bodyFont;
+  color: $black;}
 
 
-
-
-
-
+  &__list a{
+    text-decoration: none;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: 1.2rem;
   }
 }

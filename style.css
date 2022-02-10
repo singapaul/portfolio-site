@@ -56,6 +56,11 @@
   font-size: 2em;
   min-height: 1vh;
   font-family: "Fraunces", serif;
+  padding: 3rem 0 3rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .projects__content {
   background-color: #C4C4C4;
@@ -141,6 +146,7 @@
   font-family: "Fraunces", serif;
   display: flex;
   justify-content: center;
+  padding: 3rem 0 3rem 0;
 }
 .contact__figure__svg {
   padding-top: 5vh;
@@ -149,7 +155,7 @@
   min-height: 35vh;
   background-color: #0078B5;
   width: 90%;
-  margin: auto;
+  margin: 15vh auto 15vh auto;
   box-shadow: 3em 3em;
   padding: 5%;
 }
@@ -192,4 +198,24 @@
 }
 .contact__form-submit:hover {
   background-color: green;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.footer__tag {
+  font-family: "Commissioner", sans-serif;
+  color: #000000;
+}
+.footer__list a {
+  text-decoration: none;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
 }

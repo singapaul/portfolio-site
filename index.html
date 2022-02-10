@@ -38,7 +38,7 @@
         <!-- Landing page graphic -->
         <div class="landing__graphic">
           <!-- we should wrap svgs in divs -->
-          <img class="landing__graphic__svg" src="landing.svg" alt="spent alot time on this 3">
+          <img class="landing__graphic__svg" src="landing.svg" alt="bauhaus diagram">
         </div>
       </div>
 
@@ -122,7 +122,7 @@
       <!-- Contact section -->
       <!-- Contact me section -->
 
-      <div class="contact">
+      <section class="contact">
         <!-- Contact heading -->
         <div class="contact__heading">
           <h2>CONTACT</h2>
@@ -132,10 +132,24 @@
           <img src="contact.svg" alt="contact me figure" class="contact__figure__svg">
         </div>
         <!-- Contact me CTA sign/form -->
-        <div class="contact__form">
-      
-        </div>
-      </div>
+
+        <form class="contact__form" action="">
+          <label class="contact__form-label" for="fname">name</label>
+          <input class="contact__form-input" type="text" id="fname" name="fname" placeholder="Your name...">
+          <br>
+          <label class="contact__form-label" for="email">email address:</label>
+          <input class="contact__form-input" type="text" id="email" name="email" placeholder="Your email...">
+          <br>
+          <label class="contact__form-label" for="message">message:</label>
+          <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input" placeholder="Your message..."></textarea>
+          <input type="submit" value="Submit" class="contact__form-submit">
+        </form>
+
+
+
+
+
+      </section>
     </main>
     <!-- end of the section-->
 

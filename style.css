@@ -120,3 +120,29 @@
   font-family: "Commissioner", sans-serif;
   padding-bottom: 5vh;
 }
+
+.contact {
+  width: 100%;
+  min-height: 150vh;
+}
+.contact__heading {
+  font-size: 2em;
+  min-height: 1vh;
+  font-family: "Fraunces", serif;
+  display: flex;
+  justify-content: center;
+}
+.contact__figure {
+  width: 100%;
+  margin: 0 0% 0 15%;
+}
+.contact__figure__svg {
+  width: 60%;
+  padding-top: 5vh;
+}
+.contact__form {
+  min-height: 100vh;
+  background-color: #0078B5;
+  width: 90%;
+  margin: auto;
+}

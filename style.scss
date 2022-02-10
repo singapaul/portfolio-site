@@ -184,11 +184,39 @@ sans-serif;
 
 // Contact me section 
 
+.contact {
+  width: 100%;
+  min-height: 150vh;
+
+  &__heading {
+    font-size: 2em;
+    min-height: 1vh;
+    font-family: $headingFont;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__figure {
+  width: 100%;
+  margin: 0 0% 0 15%;
+
+  &__svg{
+    width: 60%;
+    padding-top: 5vh;
+    
+
+  }
+}
+
+  &__form {
+    min-height: 100vh;
+    background-color: $blue;
+    width: 90%;
+    margin: auto;
+  }
 
 
 
 
-
-
-
-
+}

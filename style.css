@@ -65,7 +65,7 @@
   width: 100%;
 }
 .projects__content__list {
-  width: 80%;
+  width: 100%;
   display: grid;
   gap: 5vh;
   grid-template-columns: auto;
@@ -84,4 +84,35 @@
   height: 90%;
   width: 90%;
   justify-self: center;
+}
+
+.About {
+  width: 100%;
+}
+.About__heading {
+  font-size: 2em;
+  min-height: 1vh;
+  font-family: "Fraunces", serif;
+  display: flex;
+  justify-content: center;
+}
+.About__content {
+  width: 100%;
+  background-color: #4C926D;
+}
+.About__content__graphic {
+  width: 70%;
+  margin: auto;
+}
+.About__content__graphic__svg {
+  padding-top: 5vh;
+  width: 100%;
+}
+.About__content__text {
+  text-align: justify;
+  margin: auto;
+  font-size: 2em;
+  width: 90%;
+  font-family: "Commissioner", sans-serif;
+  padding-bottom: 5vh;
 }

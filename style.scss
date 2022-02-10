@@ -108,7 +108,7 @@ sans-serif;
 
     // Grid container
     &__list {
-      width: 80%;
+      width: 100%;
       display: grid;
       gap: 5vh;
       grid-template-columns: auto;
@@ -126,6 +126,7 @@ sans-serif;
 
         // styling the image
         &__img {
+          // could I style this as a background image? 
           height: 90%;
           width: 90%;
           justify-self: center;
@@ -134,3 +135,45 @@ sans-serif;
     }
   }
 }
+
+
+.About {
+
+  width: 100%;
+
+  &__heading {
+    font-size: 2em;
+    min-height: 1vh;
+    font-family: $headingFont;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 100%;
+    background-color: $green;
+
+
+    &__graphic {
+      width: 70%;
+      margin: auto;
+
+      &__svg {
+        padding-top: 5vh;
+        width: 100%;
+      }
+
+    }
+
+    &__text {
+      text-align: justify;
+      margin: auto;
+      font-size: 2em;
+      width: 90%;
+      font-family: $bodyFont;
+      padding-bottom: 5vh;
+    }
+  }
+}
+
+

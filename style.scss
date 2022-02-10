@@ -123,6 +123,7 @@ sans-serif;
         display: flex;
         justify-self: center;
         align-items: center;
+        box-shadow: 1rem 1rem;
 
         // styling the image
         &__img {
@@ -214,6 +215,7 @@ sans-serif;
     background-color: $blue;
     width: 90%;
     margin: auto;
+    box-shadow: 3em 3em;
   }
 
 

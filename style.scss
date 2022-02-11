@@ -144,7 +144,7 @@ sans-serif;
 
   &__content {
     background-color: $grey;
-    width: 100%;
+    // width: 100%;
     min-height: 185vh;
     display: flex;
     flex-direction: column;
@@ -332,7 +332,6 @@ sans-serif;
 .footer {
   height: 10vh;
   width: 100%;
-  background-color: hotpink;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -393,26 +392,112 @@ sans-serif;
 
 
     &__content {
-      width:100%;
+      width: 100%;
       display: flex;
       flex-direction: row;
-      
-      
+      justify-content: space-evenly;
+      min-height: 100vh;
+
+
       &__graphic {
         width: 30%;
       }
 
       &__list {
-        width: 70%;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+
+
+
+        &__item {
+          height: 30vh;
+          width: 30vh;
+
+        }
+
+
+
       }
 
     }
 
+
+
+  }
+
+  #project1 {
+
+    grid-area: 1/1/2/2;
   }
 
 
+  #project2 {
+
+    grid-area: 1/2/2/3
+  }
+
+  #project3 {
+    grid-area: 1/3/2/4;
+  }
+
+  #project4 {
+    grid-area: 2/1/3/2;
+  }
+
+  #project5 {
+    grid-area: 2/2/3/3;
+  }
+
+  #project6 {
+    grid-area: 2/3/3/4;
+  }
+
+  .About {
+
+    &__content {
+      min-height: 80vh;
+    }
+
+  }
+
+  .contact {
 
 
+    &__flex {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-evenly;
+
+      &__figure {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+
+      }
+
+      &__form {
+        width: 50%;
+        min-height: 0vh;
+        background-color: $blue;
+        margin: 5vh auto 5vh auto;
+
+
+        // form label{width: 100%;}
+
+
+
+      }
+
+    }
+
+
+  }
 
 
 

@@ -10,6 +10,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Commissioner&family=Fraunces&display=swap" rel="stylesheet">
+  <!-- bootstrap code -->
+
+  <!-- Bootstrap Code  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font awesome  -->
+  <script src="https://kit.fontawesome.com/ccbe6ef3ca.js" crossorigin="anonymous"></script>
+
+
+
+
 </head>
 
 <body>
@@ -17,15 +38,67 @@
   <!-- whole paged wrapped in div for styling -->
   <div>
     <!-- Nav Bar -->
-    <nav class="navbar">
-      <ul class="navbar__list">
-        <a class="navbar__list__item" href="#projects">Projects</a>
-        <a class="navbar__list__item" href="#About">About</a>
-        <a class="navbar__list__item" href="#Contact">Contact</a>
-        <a class="navbar__list__item" href="#Medium">Medium</a>
-      </ul>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar__list navbar-nav ml-auto" id="myLinks">
+
+          <li class="nav-item"><a class="nav-link navbar__list__item" href="#projects">Projects</a></li>
+
+          <li class="nav-item"><a class="nav-link navbar__list__item" href="#projects">About</a></li>
+
+          <li class="nav-item"><a class="nav-link navbar__list__item" href="#projects">Contact</a></li>
+
+          <li class="nav-item"><a class="nav-link navbar__list__item" href="#projects">Medium</a></li> -->
+    <!-- </ul> -->
+
+    <!-- </div>
+
+    </nav> -->
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="navbar-nav ml-auto navbar__list">
+          <li class="nav-item navbar__list__item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item navbar__list__item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item navbar__list__item">
+            <a class="nav-link" href="https://medium.com/@paulmichaelhardman" target="_blank">Medium</a>
+          </li>
+          <li class="nav-item navbar__list__item">
+            <a class="nav-link" href="#cta">Contact</a>
+          </li>
+        </ul>
+      </div>
 
     </nav>
+
+
+
+
+
+
+
+
+
 
     <main>
       <!-- landing page  -->
@@ -44,13 +117,13 @@
 
       <!-- projects section -->
 
-      <div  class="projects">
+      <div class="projects">
         <!-- scrolling projects text -->
         <div class="projects__scrollText">Check out my work</div>
         <!-- main projects contents div -->
         <!-- Title -->
         <div class="projects__heading">
-          <h2 id ="projects">PROJECTS</h2>
+          <h2 id="projects">PROJECTS</h2>
         </div>
         <!-- sub div for icon and tiles -->
         <div class="projects__content">
@@ -98,7 +171,7 @@
 
       <div class="About">
         <div class="About__heading">
-          <h2>About Me</h2>
+          <h2 id="about">About Me</h2>
         </div>
         <!-- div for graphic and about me text -->
         <div class="About__content">
@@ -125,7 +198,7 @@
       <section class="contact">
         <!-- Contact heading -->
         <div class="contact__heading">
-          <h2>CONTACT</h2>
+          <h2 id="cta">CONTACT</h2>
         </div>
         <!--Contact figure -->
         <div class="contact__figure">
@@ -141,7 +214,8 @@
           <input class="contact__form-input" type="text" id="email" name="email" placeholder="Your email...">
           <br>
           <label class="contact__form-label" for="message">message:</label>
-          <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input" placeholder="Your message..."></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input"
+            placeholder="Your message..."></textarea>
           <input type="submit" value="Submit" class="contact__form-submit">
         </form>
 
@@ -158,7 +232,7 @@
 
     <footer class="footer">
       <!-- copyright claim -->
-      <div class="footer__tag" >
+      <div class="footer__tag">
         <p>© 2022 MADE WITH /> BY PAUL HARDMAN</p>
       </div>
       <!-- Links to websites -->
@@ -173,6 +247,8 @@
     <!-- end of footer -->
   </div>
   <!-- Entire site content wrapped in div -->
+
+
 
 </body>
 

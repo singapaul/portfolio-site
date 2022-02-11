@@ -39,7 +39,7 @@ sans-serif;
 
 
   &__list {
-   text-decoration: none;
+    text-decoration: none;
     padding: 0;
     margin: 0;
 
@@ -49,12 +49,12 @@ sans-serif;
       padding: 10px;
       font-size: 1.2rem;
       font-family: $headingFont;
-      
+
 
     }
 
 
-    &__item  a{
+    &__item a {
       text-decoration: none;
       color: $black;
       width: 100%;
@@ -71,17 +71,17 @@ sans-serif;
     }
   }
 
-  &__icon{
+  &__icon {
     background: black;
     display: block;
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
   }
 
-  &__icon:hover{
-    background:#ddd;
-    color:black;
+  &__icon:hover {
+    background: #ddd;
+    color: black;
   }
 }
 
@@ -355,11 +355,62 @@ sans-serif;
 
 // styling the breakpoints: 
 
-@media only screen and (min-width: 820px){
+@media only screen and (min-width: 820px) {
 
-.landing{
+  .landing {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
 
-}
+
+    &__titles {
+      width: 60%;
+      font-size: 10rem;
+      justify-content: space-evenly;
+      padding-left: 10%;
+      padding-bottom: 10%;
+
+    }
+
+
+    &__graphic {
+      width: 40%;
+      padding-right: 10%;
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+  }
+
+  .projects {
+
+    &__scrollText {
+      overflow: hidden;
+    }
+
+
+
+    &__content {
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      
+      
+      &__graphic {
+        width: 30%;
+      }
+
+      &__list {
+        width: 70%;
+      }
+
+    }
+
+  }
+
+
 
 
 

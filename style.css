@@ -248,3 +248,39 @@
   padding: 0 0.5rem 0 0.5rem;
   font-size: 1.2rem;
 }
+
+@media only screen and (min-width: 820px) {
+  .landing {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+  }
+  .landing__titles {
+    width: 60%;
+    font-size: 10rem;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-bottom: 10%;
+  }
+  .landing__graphic {
+    width: 40%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects__scrollText {
+    overflow: hidden;
+  }
+  .projects__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .projects__content__graphic {
+    width: 30%;
+  }
+  .projects__content__list {
+    width: 70%;
+  }
+}

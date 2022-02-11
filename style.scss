@@ -108,6 +108,7 @@ sans-serif;
     flex-direction: column;
     justify-content: space-evenly;
     font-family: $headingFont;
+    padding-left: 5%;
   }
 
   // Styling the graphic for the landing page
@@ -265,7 +266,7 @@ sans-serif;
     }
   }
 
-  &__form {
+  &__flex__form {
     min-height: 35vh;
     background-color: $blue;
     width: 90%;

@@ -67,6 +67,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   font-family: "Fraunces", serif;
+  padding-left: 5%;
 }
 .landing__graphic {
   width: 100%;
@@ -179,7 +180,7 @@
 .contact__figure__svg {
   padding-top: 5vh;
 }
-.contact__form {
+.contact__flex__form {
   min-height: 35vh;
   background-color: #0078B5;
   width: 90%;
@@ -187,13 +188,13 @@
   box-shadow: 3em 3em;
   padding: 5%;
 }
-.contact__form-label {
+.contact__flex__form-label {
   width: 100%;
   font-size: 2em;
   padding-left: 2%;
   font-family: "Commissioner", sans-serif;
 }
-.contact__form-input {
+.contact__flex__form-input {
   display: block;
   width: 80%;
   padding: 2%;
@@ -212,7 +213,7 @@
   /* Bottom margin */
   resize: vertical;
 }
-.contact__form-submit {
+.contact__flex__form-submit {
   display: block;
   margin: auto;
   margin-bottom: 5%;
@@ -224,7 +225,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.contact__form-submit:hover {
+.contact__flex__form-submit:hover {
   background-color: green;
 }
 

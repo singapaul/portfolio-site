@@ -42,7 +42,6 @@ sans-serif;
    text-decoration: none;
     padding: 0;
     margin: 0;
-    float: left;
 
     &__item {
       text-decoration: none;
@@ -50,6 +49,7 @@ sans-serif;
       padding: 10px;
       font-size: 1.2rem;
       font-family: $headingFont;
+      
 
     }
 
@@ -57,6 +57,7 @@ sans-serif;
     &__item  a{
       text-decoration: none;
       color: $black;
+      width: 100%;
       padding: 10px;
       font-size: 1.2rem;
       font-family: $headingFont;
@@ -125,7 +126,9 @@ sans-serif;
 .projects {
   width: 100%;
 
-  &__scrollText {}
+  &__scrollText {
+    width: 100%;
+  }
 
   &__heading {
     font-size: 2em;
@@ -175,6 +178,7 @@ sans-serif;
         justify-self: center;
         align-items: center;
         box-shadow: 1rem 1rem;
+
 
         // styling the image
         &__img {
@@ -346,4 +350,19 @@ sans-serif;
     padding: 0 0.5rem 0 0.5rem;
     font-size: 1.2rem;
   }
+}
+
+
+// styling the breakpoints: 
+
+@media only screen and (min-width: 820px){
+
+.landing{
+
+}
+
+
+
+
+
 }

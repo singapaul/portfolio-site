@@ -64,16 +64,15 @@
 
     <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <a class="navbar-brand" href="#"></a>
-        <ul class="navbar-nav ml-auto navbar__list">
+        <ul class="navbar-nav ml-auto navbar__list ">
           <li class="nav-item navbar__list__item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
@@ -119,7 +118,8 @@
 
       <div class="projects">
         <!-- scrolling projects text -->
-        <div class="projects__scrollText">Check out my work</div>
+        <div class="projects__scrollText">
+          <img src="checkoutWork.svg" alt="scrollytexty"></div>
         <!-- main projects contents div -->
         <!-- Title -->
         <div class="projects__heading">
@@ -136,10 +136,9 @@
           <div class="projects__content__list">
             <!-- CUrrently using unordered list to group items, but can just flexbox for mobile and grid for web? -->
             <div class="projects__content__list__item"><a href="">Project #1</a>
-              <img src="canada.jpeg" alt="test" class="projects__content__list__item__img">
 
             </div>
-            <div class="projects__content__list__item"><a href="">Project #1</a>
+            <div class="projects__content__list__item"><a href=""></a>
               <img src="canada.jpeg" alt="test" class="projects__content__list__item__img">
 
             </div>
@@ -198,7 +197,7 @@
       <section class="contact">
         <!-- Contact heading -->
         <div class="contact__heading">
-          <h2 id="cta">CONTACT</h2>
+          <h2>CONTACT</h2>
         </div>
         <!--Contact figure -->
         <div class="contact__figure">
@@ -206,7 +205,7 @@
         </div>
         <!-- Contact me CTA sign/form -->
 
-        <form class="contact__form" action="">
+        <form id="cta" class="contact__form" action="">
           <label class="contact__form-label" for="fname">name</label>
           <input class="contact__form-input" type="text" id="fname" name="fname" placeholder="Your name...">
           <br>

@@ -1,0 +1,402 @@
+section {
+  min-height: 100vh;
+}
+
+// Outlining the page dividers 
+
+.pageBreak {
+  height: 15vh;
+  background-color: pink;
+  border: 2px solid black;
+
+  &__svg {
+    height: 100%;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+
+}
+
+/* styling the landing */
+// native styling for mobile
+
+.landing {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  // adjust this later, massively reduce for nav bar
+  grid-template-rows: 5% 1fr 1fr;
+  margin: 0%;
+  border: 0;
+  padding: 0;
+
+
+  &__navi {
+    margin: 0;
+    border: solid 2px black;
+    grid-area: 1/1/2/2;
+  }
+
+  &__greeting {
+    margin: 0;
+    border: solid 2px black;
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-vanityCard {
+      border: dotted 2px black;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &__svg {
+    margin: 0;
+    border: solid 2px black;
+    grid-area: 3/1/4/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 25% 65%;
+  margin: 0%;
+  border: 0;
+  padding: 0;
+
+  &__title {
+    border: solid 2px black;
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+  }
+
+
+  &__display {
+    // border: solid 2px black;
+    grid-area: 3/1/4/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+
+    &-example {
+      height: 100%;
+      width: 100%;
+      border: solid black 2px;
+    }
+  }
+
+  &__svg {
+    border: solid 2px black;
+    grid-area: 2/1/3/2;
+
+    &-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// tagretting the IDs
+
+#projects__display-item1 {
+  grid-area: 1/1/2/2;
+}
+
+#projects__display-item2 {
+  grid-area: 1/2/2/3;
+}
+
+#projects__display-item3 {
+  grid-area: 2/1/3/2;
+}
+
+#projects__display-item4 {
+  grid-area: 2/2/3/3;
+}
+
+#projects__display-item5 {
+  grid-area: 3/1/4/2;
+}
+
+#projects__display-item6 {
+  grid-area: 3/2/4/3;
+}
+
+.about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 1fr;
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  &__title {
+    border: solid 2px black;
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    border: solid 2px black;
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin:5%;
+
+    &-text {
+      text-align: justify;
+      text-justify: inter-word;
+      padding-top: 5%;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+
+  }
+}
+
+
+.contact {
+  width: 100%;
+  display: grid;
+  height: 92vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 25% 65%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  &__svg {
+    border: solid 2px black;
+    grid-area: 2/1/3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+
+    &-img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  &__form {
+    border: solid 2px black;
+    grid-area: 3/1/4/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 0 5% 0;
+    margin: 5%;
+
+    &-label {
+      padding-left: 10%;
+      padding-bottom: 3%;
+    }
+
+    &-input {
+
+      display: block;
+      width: 80%;
+      padding: 2%;
+      /* Some padding */
+      border: 1px solid #ccc;
+      /* Gray border */
+      border-radius: 4px;
+      /* Rounded borders */
+      box-sizing: border-box;
+      /* Make sure that padding and width stays in place */
+      // margin: 6% 0%;
+      resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+
+    }
+
+    &-submit {
+      display: block;
+      margin: 5% auto;
+      width: 20%;
+      padding: 1% 2%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+
+  }
+
+
+  &__title {
+    border: solid 2px black;
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.footer {
+  height: 8vh;
+  width: 100%;
+  border: solid 2px black;
+  min-height: 2vh;
+}
+
+
+// styling the layout for tablet
+// After 720px go to the tablet site
+// @media only screen and (min-width: 600px) {
+//   body {
+//     // Only thing to change is to change the layout on the projects grid
+//     background-color: purple;
+//   }
+// }
+
+
+// styling the layout for desktop
+// After 720px go to the desktop site
+
+@media only screen and (min-width: 700px) {
+
+
+  body {
+    background-color: $white;
+  }
+
+  .landing {
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+
+    &__navi {
+      grid-area: 1/1/2/3;
+    }
+
+    &__greeting {
+
+      grid-area: 2/1/3/2;
+
+      // might need to ammend this line below
+      &-vanityCard {}
+
+    }
+
+    &__svg {
+      grid-area: 2/2/3/3;
+      overflow: hidden;
+
+      &-img {
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+  }
+
+
+  .projects {
+
+    grid-template-columns: 1fr 3fr 15%;
+    grid-template-rows: 1fr;
+
+
+    &__title {
+
+      grid-area: 1/3/2/4;
+ 
+    }
+
+    &__display {
+
+      grid-area: 1/2/2/3;
+    }
+
+    &__svg {
+
+      grid-area: 1/1/2/2;
+    }
+  }
+
+  .about {
+
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 1fr;
+
+
+    &__title {
+
+      grid-area: 1/1/2/2;
+    }
+
+    &__content {
+
+      grid-area: 1/2/2/3;
+    }
+  }
+
+
+  .contact {
+
+    grid-template-columns: 1fr 2fr 15%;
+    grid-template-rows: 1fr;
+
+
+    &__svg {
+
+      grid-area: 1/1/2/2;
+    }
+
+
+    &__form {
+
+      grid-area: 1/2/2/3;
+    }
+
+
+    &__title {
+
+      grid-area: 1/3/2/4;
+    }
+  }
+
+  .footer {
+    border: solid 3px pink;
+  }
+}

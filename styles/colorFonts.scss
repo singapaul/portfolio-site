@@ -1,0 +1,106 @@
+// defining the color schemes
+
+$yellow: #FCD91F;
+$red: #F25230;
+$white:#ffffff;
+$black: #000000;
+$blue: #0078B5;
+$grey: #C4C4C4;
+$green: #4C926D;
+$grey2: #2F3131;
+
+// defining the fonts 
+$headingFont:'Fraunces',
+serif;
+$bodyFont:'Commissioner',
+sans-serif;
+
+
+// Styling the home page
+.landing {
+  &__greeting {
+
+    &-vanityCard {
+      font-family: $headingFont;
+      font-size: 2em;
+    }
+  }
+}
+
+.projects {
+  &__title {
+    font-family: $headingFont;
+    font-size: 2em;
+  }
+}
+
+.about {
+  &__title {
+    font-family: $headingFont;
+    font-size: 2em;
+  }
+
+  &__content {
+    background-color: $grey;
+    &-text {
+      font-size: 1.6em;
+      font-family: $bodyFont;
+
+    }
+  }
+}
+
+
+.contact {
+
+  &__title {
+    font-family: $headingFont;
+    font-size: 2em;
+  }
+
+  &__form {
+    font-family: $bodyFont;
+    background-color: $blue;
+
+    &-label {}
+
+    &-input {}
+
+    &-submit {
+
+      background-color: $green;
+    }
+
+
+    &-submit:hover {
+      background-color: green;
+    }
+  }
+}
+
+// Desktop! 
+
+@media only screen and (min-width: 700px) {
+  .projects {
+    &__title {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  }
+
+  .about {
+    &__title {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  }
+
+  .contact {
+
+    &__title {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  }
+
+}
